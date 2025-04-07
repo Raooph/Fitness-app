@@ -30,12 +30,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar/>
-        <div className='grid grid-cols-[300px_auto] border-t-4 border-t-sky-950 '>
+        
         <SideBar/>
-        <div className="bg-sky-200 h-[calc(100vh-85px)] overflow-auto">
+        <div className="bg-white m-3 h-[calc(100vh-85px)] overflow-auto">
             {children}
          </div>
-        </div>
+       
       </body>
     </html>
   );
