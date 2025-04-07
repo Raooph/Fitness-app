@@ -1,17 +1,17 @@
 
 import Link from 'next/link'
 import React from 'react'
-
+import Image from 'next/image'
 const NavBar = () => {
   return (
-    <div className='px-2  bg-sky-900'>
-        <div className='flex justify-between items-center text-white h-[80px]'>
+    <div className='bg-lime-700'>
+        <div className='flex justify-between items-center text-lime-600 h-[80px]'>
             
-            <div className='text-2xl font-bold'>
-                <Link href="/">Logo</Link>
+            <div className='text-2xl font-bold '>
+                <Link href="/"><Image src='/logo.png' className='p-3 w-[200px] h-[100px] object-cover' alt="logo-img" width={100} height={100} /></Link>
             </div>
               <div>
-                <img  src="https://w7.pngwing.com/pngs/205/731/png-transparent-default-avatar-thumbnail.png" alt="user avatar" width={50} height={50}  className=" rounded-full border-3 border-white"/>
+                <img src="https://cdn1.iconfinder.com/data/icons/user-interface-1-glyph/32/ui_avatar_profil_user_circle-512.png" alt="avatar" className='rounded-full border-3 w-[55px] h-[55px] object-cover  border-white' />
             </div>
         </div>
     </div>
